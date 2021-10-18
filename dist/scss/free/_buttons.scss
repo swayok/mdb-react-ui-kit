@@ -1,6 +1,7 @@
 //
 // Base styles
 //
+@use 'sass:math';
 
 .btn {
   font-family: $btn-font-family;
@@ -335,7 +336,7 @@
       margin-bottom: $fixed-action-btn-li-margin-bottom;
       margin-left: auto;
       &:first-of-type {
-        margin-top: $fixed-action-btn-li-margin-bottom / 2;
+        margin-top: math.div($fixed-action-btn-li-margin-bottom, 2);
       }
     }
     a {
